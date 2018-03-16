@@ -12,12 +12,12 @@ import { Message } from 'primeng/components/common/api';
 })
 export class PecaComponent implements OnInit {
 
-  peca:Peca;
+  peca: Peca;
   msg: Message[] = []
 
-  constructor(public service: PecaService) { }
-
-
+  constructor(public service: PecaService) {
+    this.peca = new Peca(0, '', 0)
+   }
 
   ngOnInit() {
   }
